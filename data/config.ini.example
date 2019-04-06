@@ -1,0 +1,13 @@
+[key]
+; key and token
+; see https://developers.trello.com/docs/api-introduction example
+key = "use_your_own_key"
+token = "use_your_own_token"
+
+[search]
+; board id and search string
+; see https://developers.trello.com/docs/api-introduction example
+board = "use_your_own_board_id"
+day = "デイリー"
+week = "マンスリー"
+month = "ウィークリー"
