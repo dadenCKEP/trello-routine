@@ -1,6 +1,6 @@
 <?php
 // 初期化等
-$config = parse_ini_file('../data/config.ini');
+$config = parse_ini_file(dirname(__FILE__) . '/../data/config.ini');
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
