@@ -6,11 +6,13 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 // 可視のカードを取得
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+curl_setopt($ch, CURLOPT_POSTFIELDS, null);
 curl_setopt($ch, CURLOPT_URL, 'https://api.trello.com/1/boards/' . $config['board'] . '/cards/visible?key=' . $config['key'] . '&token=' . $config['token']);
 $result_card =  json_decode(curl_exec($ch), true);
 foreach ($result_card as $value_card) {
     // カードごとのチェックリストをアイテムごと取得して名前を確認
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+    curl_setopt($ch, CURLOPT_POSTFIELDS, null);
     curl_setopt($ch, CURLOPT_URL, 'https://api.trello.com/1/cards/' . $value_card['id'] . '/checklists?key=' . $config['key'] . '&token=' . $config['token'] . '&checkItem_fields=name&fields=name');
     $result_list = json_decode(curl_exec($ch), true);
     foreach ($result_list as $value_list) {
