@@ -9,5 +9,5 @@ token = "use_your_own_token"
 ; see https://developers.trello.com/docs/api-introduction example
 board = "use_your_own_board_id"
 day = "デイリー"
-week = "マンスリー"
-month = "ウィークリー"
+week = "ウィークリー"
+month = "マンスリー"
