@@ -11,3 +11,6 @@ board = "use_your_own_board_id"
 day = "デイリー"
 week = "ウィークリー"
 month = "マンスリー"
+
+[score]
+score_url = "your_own_score_api_endpoint"
